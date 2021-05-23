@@ -4,11 +4,68 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Chela+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="css/style.css">
     <title>Priyansh's Portfolio</title>
 </head>
-<body>
-    <h1>Hey there, I'm Priyansh Singh</h1>
+<body class="container">
+    <div class="navigation">
+        <input type="checkbox" class="navigation__checkbox" id="nav-toggle">
+    
+        <label for="nav-toggle" class="navigation__button">
+            <span class="navigation__icon">&nbsp;</span>
+        </label>
+    
+        <div class="navigation__background">&nbsp;</div>
+    
+        <nav class="navigation__nav">
+            <ul class="navigation__list">
+                <li class="navigation__item"><a href="#section-about" class="navigation__link"><span>01</span> About Me</a></li>
+                <li class="navigation__item"><a href="#section-features" class="navigation__link"><span>02</span> Skills</a></li>
+                <li class="navigation__item"><a href="#section-tours" class="navigation__link"><span>03</span> Major Projects</a></li>
+                <li class="navigation__item"><a href="#section-stories" class="navigation__link"><span>04</span> Contact </a>
+                </li>
+                <li class="navigation__item"><a href="#section-book" class="navigation__link"><span>05</span> Social Icons</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <header class="header">
+        <header class="header">
+            <div class="header__logo-box">
+                <img src="img/logo.png" alt="Logo" class="header__logo">
+            </div>
+            <div class="header__text-box">
+                <h1 class="heading-primary">
+                    <span class="heading-primary-sub">Hi there !</span>
+                    <span class="heading-primary-main">I am <span class="heading-primary-main-name anim-typewriter" style="color: #5643fa">Priyansh Singh.</span></span>
+                </h1>
+                <a href="#section-tours" class="btn btn_header btn--animated">About Me</a>
+            </div>
+            <div class="header__image">
+                <img src="img/programmer1.png" alt="img1" class="header__image">
+            </div>
+        </header>
+    </header>
+    <section class="about">
+
+    </section>
+    <section class="skills">
+
+    </section>
+    <section class="projects">
+
+    </section>
+    <section class="contact">
+
+    </section>
+    <footer class="footer">
+
+    </footer>
     <script src="js/app.js"></script>
 </body>
 </html>
