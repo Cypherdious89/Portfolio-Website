@@ -7,7 +7,7 @@ body {
 
 .heading-primary {
     backface-visibility: hidden;
-    margin-bottom: 1rem;
+    // margin-bottom: 1rem;
 
     &-main {
         display: block;
@@ -38,7 +38,7 @@ body {
     text-transform: uppercase;
     font-weight: 700;
     letter-spacing: 0.2rem;
-    display: inline-block;
+    display: block;
     color: $color-primary-main;
 }
 

@@ -7,14 +7,39 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=Indie+Flower&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" -->
+        <!-- integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" /> -->
 
     <link rel="stylesheet" href="css/style.css">
     <title>Priyansh's Portfolio</title>
 </head>
 <body>
+    <div class="navigation">
+        <input type="checkbox" class="navigation__checkbox" id="nav-toggle">
+    
+        <label for="nav-toggle" class="navigation__button">
+            <span class="navigation__icon">&nbsp;</span>
+        </label>
+    
+        <div class="navigation__background">&nbsp;</div>
+    
+        <nav class="navigation__nav">
+            <ul class="navigation__list">
+                <li class="navigation__item"><a href="#section-about" class="navigation__link">About Me</a></li>
+                <li class="navigation__item"><a href="#section-skills" class="navigation__link">My Skills</a></li>
+                <li class="navigation__item"><a href="#section-projects" class="navigation__link">Major Projects</a></li>
+                <li class="navigation__item"><a href="#section-contact" class="navigation__link">Contact Me</a></li>
+                <li class="navigation__item"><a href="#footer" class="navigation__link">Social Presence</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
     <header class="header">
         <div class="header__logo-box">
             <div class="header__logo">PS</div>
+        </div>
+        <div class="mode-toggle">
+            <img src="img/icons/sun.svg" class="toggle">
         </div>
         <div class="row">
             <div class="col-1-of-2">
@@ -24,6 +49,9 @@
                         <span class="heading-primary-main">I’m <span class="heading-primary-main-name">Priyansh Singh</span></span>
                     </h1>
                     <h2 class="heading-secondary">A Tech Geek, Web & App Developer and Open Source Contributor</h2>
+                </div>
+                <div class="header__btn">
+                    <a href="#section-about" class="btn btn--main btn--animated">About Me  &rarr;</a>
                 </div>
             </div>
             <div class="col-1-of-2">

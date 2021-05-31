@@ -39,4 +39,28 @@
         transform: translate(-50%, -50%);
     }
 
+    &__btn{
+        position: absolute;
+        top: 70%;
+    }
+}
+
+.mode-toggle{
+    position: absolute;
+    border-radius: 50%;
+    width: 4rem;
+    height: 4rem;
+    right: 15rem;
+    top: 4rem;
+
+    background: $color-primary-light-2;
+}
+
+.toggle {
+    position: absolute;
+    width: 3rem;
+    height: 3rem;
+    left: 0.5rem;
+    top: 0.55rem;
+
 }
