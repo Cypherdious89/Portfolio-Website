@@ -1,0 +1,36 @@
+.header-social-icons{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 3rem;
+    display: flex;
+    flex-direction: column;
+
+    .icon{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 1.5rem 0;
+        border-radius: 50%;
+        width: 4rem;
+        height: 4rem;
+        
+        background-color: $color-gray-light;
+
+        &-link{
+            transform: scale(0.5);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+        // a{
+        //     display: inline-block;
+        //     // margin: 0.5rem 0;
+        //     transform: scale(0.5);
+        //     width: 8rem;
+        //     height: 8rem;
+        //     background-color: royalblue;
+        // }
+    }
+// }

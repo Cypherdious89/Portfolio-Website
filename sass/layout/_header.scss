@@ -1,66 +1,26 @@
 .header {
+    width: 100%;
+    padding: 0 10rem;
     height: 85vh;
-    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 2rem;
 
-    &__logo-box {
-        position: absolute;
-        top: 2rem;
-        left: 2rem;
-        height: 6rem;
-        width: 6rem;
-        background-color: $color-primary-light-2;
-        border-radius: 50%;
+    &-textbox {
+        // text-transform: uppercase;
+        position: relative;
+        max-width: 60rem;
+        z-index: 1;
+        margin-right: 2rem;
+        grid-column: 1/2;
+        justify-self: start;
+        align-self: center;
     }
 
-    &__logo{
-        position: absolute;
-        // top: 0.5rem;
-        left: 1rem;
-        font-size: 3.5rem;
-        font-family: 'Caveat',
-        sans-serif;
-        font-weight: 600;
-        color: $color-primary-main;
-    }
-
-    &__img {
-        position: absolute;
-        top: 10%;
-        left: 60%;
+    &-img{
         height: 60rem;
         width: 60rem;
-        color: $color-primary-main;
+        justify-self: end;
     }
-
-    &__text-box{
-        position: absolute;
-        top: 55%;
-        left: 30%;
-        transform: translate(-50%, -50%);
-    }
-
-    &__btn{
-        position: absolute;
-        top: 70%;
-    }
-}
-
-.mode-toggle{
-    position: absolute;
-    border-radius: 50%;
-    width: 4rem;
-    height: 4rem;
-    right: 15rem;
-    top: 4rem;
-
-    background: $color-primary-light-2;
-}
-
-.toggle {
-    position: absolute;
-    width: 3rem;
-    height: 3rem;
-    left: 0.5rem;
-    top: 0.55rem;
-
 }

@@ -6,105 +6,106 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=Indie+Flower&display=swap" rel="stylesheet">
-    <!-- <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" -->
-        <!-- integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" /> -->
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Priyansh's Portfolio</title>
 </head>
 <body>
-    <div class="navigation">
-        <input type="checkbox" class="navigation__checkbox" id="nav-toggle">
-    
-        <label for="nav-toggle" class="navigation__button">
-            <span class="navigation__icon">&nbsp;</span>
-        </label>
-    
-        <div class="navigation__background">&nbsp;</div>
-    
-        <nav class="navigation__nav">
-            <ul class="navigation__list">
-                <li class="navigation__item"><a href="#section-about" class="navigation__link">About Me</a></li>
-                <li class="navigation__item"><a href="#section-skills" class="navigation__link">My Skills</a></li>
-                <li class="navigation__item"><a href="#section-projects" class="navigation__link">Major Projects</a></li>
-                <li class="navigation__item"><a href="#section-contact" class="navigation__link">Contact Me</a></li>
-                <li class="navigation__item"><a href="#footer" class="navigation__link">Social Presence</a>
-                </li>
+    <section class="navigation-bar">
+        <div class="navbar nav">
+            <a href="#" class="nav-title"><span>P</span>ortfolio</a>
+            <ul class="nav-navigation">
+                <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Skills</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Projects</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+                <li class="nav-item"><span class="toggle-icon"></span></li>
             </ul>
-        </nav>
-    </div>
-    <header class="header">
-        <div class="header__logo-box">
-            <div class="header__logo">PS</div>
         </div>
-        <div class="mode-toggle">
-            <img src="img/icons/sun.svg" class="toggle">
+    </section>
+    <header class="header u-margin-bottom-medium" id="home">
+        <div class="header-textbox">
+            <h2 class="heading-primary-sub">Hi, There !</h2>
+            <h1 class="heading-primary-main">I'm <span class="name">Priyansh Singh</span></h1>
+            <h3 class="paragraph-main">I am a MERN Stack Developer, App Developer & Tech Geek 👨‍💻</h3>
+            <a href="#section-tours" class="btn btn--main u-margin-top-small">About Me &rarr;</a>
         </div>
-        <div class="row">
-            <div class="col-1-of-2">
-                <div class="header__text-box">
-                    <h1 class="heading-primary">
-                        <span class="heading-primary-sub">Hi there, 👋</span>
-                        <span class="heading-primary-main">I’m <span class="heading-primary-main-name">Priyansh Singh</span></span>
-                    </h1>
-                    <h2 class="heading-secondary">A Tech Geek, Web & App Developer and Open Source Contributor</h2>
-                </div>
-                <div class="header__btn">
-                    <a href="#section-about" class="btn btn--main btn--animated">About Me  &rarr;</a>
+        <div class="header-img"><img src="img/programmer1.svg" alt=""></div>
+        <div class="header-social-icons">
+            <div class="icon"><a href="#"><img src="img/icons/facebook.png" alt="facebook" class="icon-link"></a></div>
+            <div class="icon"><a href="#"><img src="img/icons/github.png" alt="github" class="icon-link"></a></div>
+            <div class="icon"><a href="#"><img src="img/icons/linkedin.png" alt="linkedin" class="icon-link"></a></div>
+        </div>
+    </header>
+    <section class="section-about u-margin-bottom-medium">
+        <div class="about-main u-margin-bottom-medium">
+            <div class="about-main-box"><img src="img/photo.jpg" alt="my-image" class="about-main-img"></div>
+            <div class="about-main-textbox">
+                <h2 class="heading-secondary u-margin-bottom-small">About Me</h2>
+                <div class="about-main-textbox-card">
+                    <p class="paragraph">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem maiores quas dolores nisi tempora qui magni 
+                        libero veritatis porro aliquid numquam esse ducimus odio itaque ut, accusamus repellat voluptate 
+                        utem maiores quas dolores nisi tempora.
+                    </p>
+                    <br>
+                    <p class="paragraph">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem maiores quas dolores nisi tempora qui magni
+                        libero veritatis porro aliquid numquam esse ducimus odio itaque ut, accusamus repellat voluptate
+                        utem maiores quas dolores nisi tempora.
+                    </p>
+                    <a href="#section-tours" class="btn btn--main u-margin-top-small">Download CV</a>
                 </div>
             </div>
-            <div class="col-1-of-2">
-                <img src="img/programmer1.svg" alt="header photo" class="header__img">
+        </div>
+        <div class="about-sub">
+            <div class="about-sub-card">
+                <h3 class="heading-tertiary">Education</h3>
+                <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, error reprehenderit. 
+                    Blanditiis, possimus provident, expedita est recusandae quis libero aliquam nemo, molestias at impedit ratione 
+                    reprehenderit dicta? Recusandae, sapiente nesciunt.
+                </p>
+            </div>
+            <div class="about-sub-card">
+                <h3 class="heading-tertiary">Interests</h3>
+                <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, error reprehenderit.
+                    Blanditiis, possimus provident, expedita est recusandae quis libero aliquam nemo, molestias at impedit ratione
+                    reprehenderit dicta? Recusandae, sapiente nesciunt.
+                </p>
+            </div>
+            <div class="about-sub-card">
+                <h3 class="heading-tertiary">Hobbies</h3>
+                <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, error reprehenderit.
+                    Blanditiis, possimus provident, expedita est recusandae quis libero aliquam nemo, molestias at impedit ratione
+                    reprehenderit dicta? Recusandae, sapiente nesciunt.
+                </p>
             </div>
         </div>
-    </>
-    <header class="about">
-
-    </>
-    <section class="skills">
-
     </section>
-    <section class="projects">
-
+    <section class="section-skills u-margin-bottom-medium">
+        <h2 class="heading-secondary">Skills</h2>
+        <div class="skill">
+            <div class="skill-content">
+                <div class="skill-content-card">
+                    <h3 class="heading-tertiary">Web Development</h3>
+                    <div class="skill-card-icons"></div>
+                </div>
+                <div class="skill-content-card">
+                    <h3 class="heading-tertiary">App Development</h3>
+                    <div class="skill-icons"></div>
+                </div>
+                <div class="skill-content-card">
+                    <h3 class="heading-tertiary">Others</h3>
+                    <div class="skill-icons"></div>
+                </div>
+            </div>
+            <div class="skill-img">
+                <img src="img/programmer3.svg" alt="" class="skill-img-content">
+            </div>
+        </div>
+        
     </section>
-    <section class="contact">
-
-    </section>
-    <footer class="footer">
-
-    </footer>
-    <script src="js/app.js"></script>
-
-    <!-- <section class="grid-test">
-                <div class="row">
-                    <div class="col-1-of-2">Column 1 of 2</div>
-                    <div class="col-1-of-2">Column 1 of 2</div>
-                </div>
-                <div class="row">
-                    <div class="col-1-of-3">Column 1 of 3</div>
-                    <div class="col-1-of-3">Column 1 of 3</div>
-                    <div class="col-1-of-3">Column 1 of 3</div>
-                </div>
-                <div class="row">
-                    <div class="col-1-of-3">Column 1 of 3</div>
-                    <div class="col-2-of-3">Column 2 of 3</div>
-                </div>
-                <div class="row">
-                    <div class="col-1-of-4">Column 1 of 4</div>
-                    <div class="col-1-of-4">Column 1 of 4</div>
-                    <div class="col-1-of-4">Column 1 of 4</div>
-                    <div class="col-1-of-4">Column 1 of 4</div>
-                </div>
-                <div class="row">
-                    <div class="col-1-of-4">Column 1 of 4</div>
-                    <div class="col-1-of-4">Column 1 of 4</div>
-                    <div class="col-2-of-4">Column 2 of 4</div>
-                </div>
-                <div class="row">
-                    <div class="col-1-of-4">Column 1 of 4</div>
-                    <div class="col-3-of-4">Column 3 of 4</div>
-                </div>
-            </section> -->
 </body>
+<script src="js/app.js"></script>
 </html>
