@@ -1,0 +1,24 @@
+/* Works on Firefox */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: $color-primary-main $color-white;
+}
+
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+    width: 1rem;
+}
+
+*::-webkit-scrollbar-track {
+    background: var(--background);
+}
+
+*::-webkit-scrollbar-thumb {
+    background: linear-gradient($color-primary-light-1, $color-primary-light-2);
+    border-radius: 2rem;
+    transition: all 0.2s;
+
+    &:hover {
+        background: linear-gradient($color-primary-main, $color-primary-light-2);
+    }
+}

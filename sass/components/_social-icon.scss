@@ -17,6 +17,10 @@
         
         background-color: $color-gray-light;
 
+        &:hover{
+            background-color: $color-primary-light-3;
+        }
+
         &-link{
             transform: scale(0.5);
             display: flex;
@@ -24,13 +28,4 @@
             align-items: center;
         }
     }
-        // a{
-        //     display: inline-block;
-        //     // margin: 0.5rem 0;
-        //     transform: scale(0.5);
-        //     width: 8rem;
-        //     height: 8rem;
-        //     background-color: royalblue;
-        // }
-    }
-// }
+}
