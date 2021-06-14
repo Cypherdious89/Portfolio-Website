@@ -1,27 +1,7 @@
-:root{
-    --background: #f2f2f2;
-    --primary: #636Cff;
-    --secondary: #636Cff;
-    --toggler: #b8b9f0;
-    --white: #fff;
-    --black: #000;
-    --grad-1: #f0f0f0;
-    --grad-2: #f4f4f4;
-}
-
-.dark {
-    --background: #2f2b33;
-    --primary: #b9c6e2;
-    --secondary: #7173de;
-    --black: #fff;
-    --white: #000;
-    --grad-1: #0f0f0f;
-    --grad-2: #4f4f4f;
-}
 *,
 *::after,
 *::before {
-    margin: 0;
+    margin: 0;    
     padding: 0;
     box-sizing: inherit;
     font-family: 'Lato', sans-serif;

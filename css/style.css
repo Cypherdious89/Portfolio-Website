@@ -15,25 +15,6 @@ ORDER: Base + typography > general layout + grid > page layout > components
 
 1em = 16px
 */
-:root {
-  --background: #f2f2f2;
-  --primary: #636Cff;
-  --secondary: #636Cff;
-  --toggler: #b8b9f0;
-  --white: #fff;
-  --black: #000;
-  --grad-1: #f0f0f0;
-  --grad-2: #f4f4f4; }
-
-.dark {
-  --background: #2f2b33;
-  --primary: #b9c6e2;
-  --secondary: #7173de;
-  --black: #fff;
-  --white: #000;
-  --grad-1: #0f0f0f;
-  --grad-2: #4f4f4f; }
-
 *,
 *::after,
 *::before {
@@ -59,7 +40,8 @@ body {
   font-size: 5rem;
   text-transform: uppercase;
   font-weight: 600;
-  color: var(--primary); }
+  color: var(--secondary);
+  letter-spacing: 1rem; }
   .heading-primary-main {
     font-size: 5rem;
     color: var(--black); }
@@ -153,11 +135,11 @@ body {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
 
 .btn--main {
-  background-color: var(--secondary);
+  background-color: #636Cff;
   color: #fff;
   letter-spacing: 2px; }
   .btn--main::after {
-    background-color: var(--secondary); }
+    background-color: #636Cff; }
 
 .btn::after {
   content: "";
@@ -170,6 +152,56 @@ body {
   left: 0;
   z-index: -1;
   transition: all 0.5s; }
+
+.project-card {
+  background-color: var(--background);
+  color: var(--black);
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-row-gap: 3rem;
+  box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.2); }
+  .project-card-img {
+    width: 100%;
+    grid-row: 1 / 2;
+    grid-column: 1 / -1;
+    z-index: 1; }
+  .project-card-title {
+    grid-row: 1 / 2;
+    grid-column: 1 / -1;
+    justify-self: center;
+    align-self: end;
+    z-index: 3;
+    text-transform: uppercase;
+    width: 80%;
+    font-family: 'Lato', sans-serif;
+    font-size: 2rem;
+    letter-spacing: 3px;
+    text-align: center;
+    padding: 1rem;
+    background-color: #5D5FEF;
+    color: #fff;
+    font-weight: 600;
+    transform: translateY(50%); }
+  .project-card-paragraph {
+    font-size: 1.6rem;
+    grid-column: 1/-1; }
+    .project-card-paragraph span {
+      display: block; }
+  .project-card-btn {
+    border: none;
+    text-decoration: none;
+    font-size: 1.6rem;
+    background-color: #5D5FEF;
+    color: #fff;
+    font-weight: 400;
+    padding: 1rem; }
+
+.btn-1 {
+  margin-right: 2rem; }
+
+.btn-2 {
+  margin-left: 2rem; }
 
 .header-social-icons {
   position: absolute;
@@ -289,7 +321,7 @@ body {
   letter-spacing: 0.5rem;
   max-width: 7rem; }
   .nav-title span {
-    color: #5D5FEF; }
+    color: #636Cff; }
 
 .nav-navigation {
   position: relative;
@@ -336,6 +368,19 @@ body {
 
 .toggle-icon.active::before {
   content: '\f185'; }
+
+.projects {
+  position: relative;
+  width: 100%;
+  padding: 0 10rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  grid-gap: 7rem;
+  justify-items: center;
+  align-items: center; }
+  .projects-main-btn {
+    display: flex;
+    justify-content: center; }
 
 .section-skills {
   position: relative;
@@ -393,3 +438,26 @@ body {
 .section-skills {
   background-color: var(--background);
   margin-top: 10vh; }
+
+.section-projects {
+  background-color: var(--background);
+  margin-top: 10vh; }
+  .section-projects a.btn {
+    justify-content: center; }
+
+.dark {
+  --background: #2f2b33;
+  --primary: #b9c6e2;
+  --secondary: #b9c6e2;
+  --black: #fff;
+  --white: #000;
+  --grad-1: #0f0f0f;
+  --grad-2: #4f4f4f; }
+
+:root {
+  --background: #f2f2f2;
+  --primary: #5d5fef;
+  --secondary: #636Cff;
+  --toggler: #b8b9f0;
+  --white: #fff;
+  --black: #000; }

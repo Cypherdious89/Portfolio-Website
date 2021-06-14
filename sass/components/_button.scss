@@ -34,12 +34,12 @@
     }
 
     &--main {
-        background-color: var(--secondary);
+        background-color: $color-primary-light-1;
         color: $color-white;
         letter-spacing: 2px;
 
         &::after {
-            background-color: var(--secondary);
+            background-color: $color-primary-light-1;
         }
     }
 
