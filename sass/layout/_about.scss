@@ -28,7 +28,7 @@
 
         &-card{
             padding: 2rem;
-            background: var(--background);
+            background: var(--card);
             color: var(--black);
             box-shadow: 0 2rem 5rem rgba($color-black, 0.2);
             border-bottom: 5px solid $color-primary-main;
@@ -48,7 +48,7 @@
 
     &-card{
         padding: 1rem 2rem;
-        background: var(--background);
+        background: var(--card);
         color: var(--black);
         box-shadow: 0 2rem 5rem rgba($color-black, 0.2);
         border-bottom: 5px solid $color-primary-main;

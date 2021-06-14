@@ -14,6 +14,7 @@
         //changes for <button> element
         border: none;
         cursor: pointer;
+        backface-visibility: hidden;
     }
 
     &:hover {
