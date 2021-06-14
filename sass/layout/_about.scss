@@ -1,7 +1,6 @@
 .about-main{
     position: relative;
     width: 100%;
-    padding: 0 10rem;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 1fr;
@@ -40,12 +39,12 @@
 .about-sub{
     position: relative;
     width: 100%;
-    padding: 0 10rem;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr;
     grid-column-gap: 3rem;
     grid-row-gap: 0px;
+    z-index: 1;
 
     &-card{
         padding: 1rem 2rem;

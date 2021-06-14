@@ -37,8 +37,7 @@ body {
 body {
   font-family: "Lato", sans-serif;
   font-weight: 400;
-  line-height: 1.7;
-  background-color: var(--background); }
+  line-height: 1.7; }
 
 .heading-primary {
   font-size: 5rem;
@@ -162,6 +161,7 @@ body {
   color: var(--black);
   padding: 1rem;
   display: grid;
+  height: 100%;
   grid-template-columns: repeat(2, 1fr);
   grid-row-gap: 3rem;
   box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.2); }
@@ -195,6 +195,7 @@ body {
   .project-card-btn {
     border: none;
     text-decoration: none;
+    text-align: center;
     font-size: 1.6rem;
     background-color: #5D5FEF;
     color: #fff;
@@ -302,7 +303,6 @@ body {
 .about-main {
   position: relative;
   width: 100%;
-  padding: 0 10rem;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 1fr;
@@ -330,12 +330,12 @@ body {
 .about-sub {
   position: relative;
   width: 100%;
-  padding: 0 10rem;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 1fr;
   grid-column-gap: 3rem;
-  grid-row-gap: 0px; }
+  grid-row-gap: 0px;
+  z-index: 1; }
   .about-sub-card {
     padding: 1rem 2rem;
     background: var(--background);
@@ -403,9 +403,10 @@ body {
   flex-direction: column; }
 
 .header {
+  background-color: var(--background);
   width: 100%;
   padding: 0 10rem;
-  height: 85vh;
+  height: 95vh;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 1fr;
@@ -416,18 +417,17 @@ body {
     z-index: 1;
     margin-right: 2rem;
     grid-column: 1/2;
-    justify-self: start;
+    justify-self: center;
     align-self: center; }
   .header-img {
-    height: 60rem;
-    width: 60rem;
+    height: 100%;
+    width: 100%;
     justify-self: end; }
 
 .navigation-bar {
   position: relative;
   width: 100%;
-  height: 10vh;
-  padding: 5rem 10rem;
+  height: 15vh;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -505,7 +505,6 @@ body {
 .projects {
   position: relative;
   width: 100%;
-  padding: 0 10rem;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
   grid-gap: 7rem;
@@ -513,14 +512,8 @@ body {
   align-items: center; }
   .projects-main-btn {
     display: flex;
-    justify-content: center; }
-
-.section-skills {
-  position: relative;
-  width: 100%;
-  padding: 0 10rem; }
-  .section-skills h3 {
-    margin-bottom: 1rem; }
+    justify-content: center;
+    align-items: center; }
 
 .skill {
   display: grid;
@@ -566,22 +559,27 @@ body {
 
 .section-about {
   background-color: var(--background);
-  margin-top: 10vh; }
+  padding: 5rem 10rem; }
 
 .section-skills {
   background-color: var(--background);
-  margin-top: 10vh; }
+  padding: 5rem 10rem;
+  position: relative;
+  width: 100%; }
+  .section-skills h3 {
+    margin-bottom: 1rem; }
 
 .section-projects {
   background-color: var(--background);
-  margin-top: 10vh; }
+  padding: 5rem 10rem; }
   .section-projects a.btn {
     justify-content: center; }
 
 .section-contact {
-  padding: 0 15rem;
-  margin-top: 10vh;
-  background-image: var(--background); }
+  background-color: var(--background); }
+
+.container {
+  padding: 5rem 15rem; }
 
 .contact {
   background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 60%, transparent 60%), url(../img/contactback.jpg);
