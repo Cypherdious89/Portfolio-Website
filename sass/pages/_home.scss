@@ -1,5 +1,13 @@
 .section-about {
     padding: 5rem 10rem;
+
+    @include respond(tab-land) {
+        padding: 4rem 8rem;
+    }
+
+    @include respond(tab-port) {
+        padding: 3rem 6rem;
+    }
 }
 
 .section-skills {
@@ -9,54 +17,47 @@
     h3 {
         margin-bottom: 1rem;
     }
+
+    @include respond(tab-port){
+        padding: 4rem 5rem;
+    }
 }
 
 .section-projects{
     padding: 5rem 10rem;
+
+    @include respond(tab-port) {
+        padding: 3rem 6rem;
+    }
 }
 
 .section-contact{
     padding: 5rem 15rem;
+
+    @include respond(tab-land){
+        padding: 5rem 10rem;
+    }
 }
 
 .contact {
-    background-image: linear-gradient(105deg,
-            var(--grad) 0%,
-            var(--grad) 60%,
-            transparent 60%),
-        url(../img/contactback.jpg);
+    background-image: linear-gradient(105deg, var(--grad) 0%, var(--grad) 60%, transparent 60%),
+                      url(../img/contactback.jpg);
+
     background-size: 100%;
     border-radius: 3px;
     box-shadow: 0 2rem 5rem rgba($color-black, 0.4);
     padding: 2rem 3rem;
     @include respond(tab-land) {
-        background-image: linear-gradient(105deg,
-                var(--grad) 0%,
-                var(--grad) 60%,
-                transparent 60%),
-            url(../img/contactback.jpg);
+        background-image: linear-gradient(105deg, var(--grad) 0%, var(--grad) 70%, transparent 70%),
+                          url(../img/contactback.jpg);
+
         background-size: cover;
     }
 
     @include respond(tab-port) {
-        background-image: linear-gradient(to right,
-                var(--grad) 0%,
-                var(--grad) 100%,
-                transparent 100%),
-            url(../img/contactback.jpg);
+        background-image: linear-gradient(to right, var(--grad) 0%, var(--grad) 100%, transparent 100%),
+                          url(../img/contactback.jpg);
+                          
         background-size: cover;
-    }
-
-    &__form {
-        width: 50%;
-        padding: 6rem;
-
-        @include respond(tab-land) {
-            width: 65%;
-        }
-
-        @include respond(tab-port) {
-            width: 100%;
-        }
     }
 }

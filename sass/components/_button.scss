@@ -14,7 +14,9 @@
         //changes for <button> element
         border: none;
         cursor: pointer;
+        -webkit-backface-visibility: hidden;
         backface-visibility: hidden;
+        
     }
 
     &:hover {
