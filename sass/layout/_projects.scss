@@ -1,4 +1,4 @@
-.projects {
+.project {
     position: relative;
     width: 100%;
     display: grid;
@@ -6,6 +6,22 @@
     grid-gap: 7rem;
     justify-items: center;
     align-items: center;
+
+    @include respond(tab-port){
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 1fr);
+        grid-row-gap: 4rem;
+    }    
+
+    &-btn-1{
+        display: flex;
+        justify-content: start;
+    }
+
+    &-btn-2 {
+        display: flex;
+        justify-content: end;
+    }
 
     &-main-btn{
         display: flex;
