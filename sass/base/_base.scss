@@ -10,7 +10,6 @@
 html {
     font-size: 62.5%;   //1rem = 10px; 10/16 = 62.5%
     scroll-behavior: smooth;
-    scroll-snap-type: y mandatory;
 
     @include respond(big-desktop) {
         font-size: 75%; // width > 1800px
@@ -33,17 +32,6 @@ html {
 body {
     box-sizing: border-box;
 }
-
-header,
-section,
-footer {
-    scroll-snap-align: center;
-
-    @include respond(tab-port){
-        scroll-snap-align: none;
-    }
-}
-
 
 ::selection {
     background-color: $color-primary-main;
