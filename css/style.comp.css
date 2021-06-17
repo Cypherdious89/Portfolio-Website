@@ -35,6 +35,16 @@ ORDER: Base + typography > general layout + grid > page layout > components
   opacity: 1;
   transform: translateY(0); }
 
+.slide {
+  position: relative;
+  transform: translateX(-15rem);
+  opacity: 0;
+  transition: all 1.5s ease; }
+
+.slide.active {
+  opacity: 1;
+  transform: translateX(0); }
+
 *,
 *::after,
 *::before {
@@ -62,6 +72,16 @@ html {
 
 body {
   box-sizing: border-box; }
+
+header,
+section,
+footer {
+  scroll-snap-align: center; }
+  @media only screen and (max-width: 56.25em) {
+    header,
+    section,
+    footer {
+      scroll-snap-align: none; } }
 
 ::selection {
   background-color: #5D5FEF;
@@ -178,7 +198,7 @@ body {
 .name {
   font-size: 6rem;
   color: var(--secondary);
-  font-weight: 600;
+  font-family: 'Dancing Script', cursive;
   text-transform: uppercase;
   letter-spacing: 0.5rem; }
   @media only screen and (max-width: 75em) {

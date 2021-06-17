@@ -25,3 +25,15 @@
     opacity: 1;
     transform: translateY(0);
 }
+
+.slide {
+    position: relative;
+    transform: translateX(-15rem);
+    opacity: 0;
+    transition: all 1.5s ease;
+}
+
+.slide.active {
+    opacity: 1;
+    transform: translateX(0);
+}

@@ -43,3 +43,19 @@ function reveal() {
            reveals[i].classList.remove('active'); 
     }
 }
+
+window.addEventListener('scroll', slide);
+
+function slide() {
+    const slide = document.querySelectorAll('.slide');
+    for(let i = 0; i<slide.length; i++){
+        let windowHeight = window.innerHeight;
+        let revealTop = slide[i].getBoundingClientRect().top;
+        let revealPoint = 100;
+
+        if(revealTop < windowHeight - revealPoint)
+            slide[i].classList.add('active');
+        else
+            slide[i].classList.remove('active'); 
+    }
+}

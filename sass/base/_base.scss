@@ -34,11 +34,15 @@ body {
     box-sizing: border-box;
 }
 
-// header,
-// section,
-// footer {
-//     scroll-snap-align: center;
-// }
+header,
+section,
+footer {
+    scroll-snap-align: center;
+
+    @include respond(tab-port){
+        scroll-snap-align: none;
+    }
+}
 
 
 ::selection {
