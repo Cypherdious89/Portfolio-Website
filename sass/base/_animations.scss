@@ -1,0 +1,27 @@
+@keyframes loading {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 0;
+    }
+}
+
+.reveal{
+    position: relative;
+    transform: translateY(15rem);
+    opacity: 0;
+    transition: all 1.5s ease;
+}
+
+.reveal.active{
+    opacity: 1;
+    transform: translateY(0);
+}

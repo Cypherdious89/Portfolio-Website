@@ -10,38 +10,49 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" type="image/png" href="img/favicon.png">
     <title>Priyansh: Portfolio</title>
+    <!-- preloader -->
+    <div class="preload">
+        <div class="loader"></div>
+    </div>
 </head>
 <body>
-    <section class="navigation-bar-mobile" id="nav-mobile">
-        <div class="navigation">
-            <input type="checkbox" class="navigation__checkbox" id="nav-toggle">
-            <label for="nav-toggle" class="navigation__button">
-                <span class="navigation__icon">&nbsp;</span>
-            </label>
-            <div class="navigation__background">&nbsp;</div>
-            <nav class="navigation__nav">
-                <ul class="navigation__list">
-                    <li class="navigation__item"><a href="#section-home" class="navigation__link"><span>01</span> Home </a></li>
-                    <li class="navigation__item"><a href="#section-about" class="navigation__link"><span>02</span> About</a></li>
-                    <li class="navigation__item"><a href="#section-skills" class="navigation__link"><span>03</span> Skills</a></li>
-                    <li class="navigation__item"><a href="#section-projects" class="navigation__link"><span>04</span> Projects</a></li>
-                    <li class="navigation__item"><a href="#section-contact" class="navigation__link"><span>05</span> Contact</a></li>
+    <nav>
+        <section class="navigation-bar-mobile" id="nav-mobile">
+            <div class="navigation">
+                <input type="checkbox" class="navigation__checkbox" id="nav-toggle">
+                <label for="nav-toggle" class="navigation__button">
+                    <span class="navigation__icon">&nbsp;</span>
+                </label>
+                <div class="navigation__background">&nbsp;</div>
+                <nav class="navigation__nav">
+                    <ul class="navigation__list">
+                        <li class="navigation__item"><a href="#section-home" class="navigation__link"><span>01</span> Home </a>
+                        </li>
+                        <li class="navigation__item"><a href="#section-about" class="navigation__link"><span>02</span> About</a>
+                        </li>
+                        <li class="navigation__item"><a href="#section-skills" class="navigation__link"><span>03</span>
+                                Skills</a></li>
+                        <li class="navigation__item"><a href="#section-projects" class="navigation__link"><span>04</span>
+                                Projects</a></li>
+                        <li class="navigation__item"><a href="#section-contact" class="navigation__link"><span>05</span>
+                                Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </section>
+        <section class="navigation-bar-desktop" id="nav-desktop">
+            <div class="navbar nav">
+                <a href="index.html" class="nav-title"><span>P</span>ortfolio</a>
+                <ul class="nav-navigation">
+                    <li class="nav-item"><a href="#section-home" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="#section-about" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="#section-skills" class="nav-link">Skills</a></li>
+                    <li class="nav-item"><a href="#section-projects" class="nav-link">Projects</a></li>
+                    <li class="nav-item"><a href="#section-contact" class="nav-link">Contact</a></li>
                 </ul>
-            </nav>
-        </div>
-    </section>
-    <section class="navigation-bar-desktop" id="nav-desktop">
-        <div class="navbar nav">
-            <a href="index.html" class="nav-title"><span>P</span>ortfolio</a>
-            <ul class="nav-navigation">
-                <li class="nav-item"><a href="#section-home" class="nav-link">Home</a></li>
-                <li class="nav-item"><a href="#section-about" class="nav-link">About</a></li>
-                <li class="nav-item"><a href="#section-skills" class="nav-link">Skills</a></li>
-                <li class="nav-item"><a href="#section-projects" class="nav-link">Projects</a></li>
-                <li class="nav-item"><a href="#section-contact" class="nav-link">Contact</a></li>
-            </ul>
-        </div>
-    </section>
+            </div>
+        </section>
+    </nav>
     <header class="header" id="section-home">
         <div class="header__logo-box">
             <a href="index.html" class="nav-title"><span>P</span>ortfolio</a>
@@ -59,13 +70,13 @@
             <span class="toggle-icon"></span>
         </div>
     </header>
-    <main>
+    <main class="content">
         <section class="section-about" id="section-about">
             <div class="about-main u-margin-bottom-medium u-top">
-                <div class="about-main-box">
+                <div class="about-main-box reveal">
                     <img src="img/photo.jpg" alt="my-image" class="about-main-img">
                 </div>
-                <div class="about-main-textbox">
+                <div class="about-main-textbox reveal">
                     <h2 class="heading-secondary u-margin-bottom-small">About Me</h2>
                     <div class="about-main-textbox-card">
                         <p class="paragraph">
@@ -81,7 +92,7 @@
                     </div>
                 </div>
             </div>
-            <div class="about-sub">
+            <div class="about-sub reveal">
                 <div class="about-sub-card">
                     <h3 class="heading-tertiary">Education</h3>
                     <p class="paragraph">
@@ -120,7 +131,7 @@
             <h2 class="heading-secondary u-margin-bottom-small">Skills</h2>
             <div class="skill">
                 <div class="skill-content">
-                    <div class="skill-content-card">
+                    <div class="skill-content-card reveal">
                         <h3 class="heading-tertiary">Web Development</h3>
                         <div class="skill-content-card-icons-main">
                             <div class="skill-icon">
@@ -165,7 +176,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="skill-content-card">
+                    <div class="skill-content-card reveal">
                         <h3 class="heading-tertiary">App Development</h3>
                         <div class="skill-content-card-icons-sub">
                             <div class="skill-icon">
@@ -186,7 +197,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="skill-content-card">
+                    <div class="skill-content-card reveal">
                         <h3 class="heading-tertiary">Others</h3>
                         <div class="skill-content-card-icons-sub">
                             <div class="skill-icon">
@@ -208,7 +219,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="skill-img">
+                <div class="skill-img reveal">
                     <img src="img/programmer2.svg" alt="" class="skill-img-content">
                 </div>
             </div>
@@ -218,7 +229,7 @@
                 <h1 class="heading-primary">Major Projects</h1>
             </div>
             <div class="project" id="projects">
-                <div class="project-card">
+                <div class="project-card reveal">
                     <img src="img/tourguide.jpg" alt="Project 1" class="project-card-img">
                     <h5 class="project-card-title">Travel Book</h5>
                     <p class="project-card-paragraph u-margin-top-medium">
@@ -243,7 +254,7 @@
                     
                     </div>
                 </div>
-                <div class="project-card">
+                <div class="project-card reveal">
                     <img src="img/cookbook.jpg" alt="Project 1" class="project-card-img">
                     <h5 class="project-card-title">Food Mystery</h5>
                     <p class="project-card-paragraph u-margin-top-medium">
@@ -269,7 +280,7 @@
                     </div>
                     
                 </div>
-                <div class="project-card">
+                <div class="project-card reveal">
                     <img src="img/techblog.jpg" alt="Project 1" class="project-card-img">
                     <h5 class="project-card-title">Techno Report</h5>
                     <p class="project-card-paragraph u-margin-top-medium">
@@ -302,7 +313,7 @@
         </section>
         <section class="section-contact" id="section-contact">
             <div class="container">
-                <div class="contact">
+                <div class="contact reveal">
                     <div class="contact-form">
                         <form action="#" class="form">
                             <div class="u-margin-bottom-medium">

@@ -6,15 +6,11 @@
     font-size: 2rem;
 
     @include respond(tab-land){
-        top: 7%;
+        top: 6%;
         right: 12rem;
     }
 
-    @include respond(tab-port) {
-        top: 6%;
-    }
-
     @include respond(phone) {
-        top: 4%;
+        top: 3%;
     }
 }

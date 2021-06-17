@@ -15,6 +15,26 @@ ORDER: Base + typography > general layout + grid > page layout > components
 
 1em = 16px
 */
+@keyframes loading {
+  0% {
+    transform: scale(0);
+    opacity: 0; }
+  50% {
+    opacity: 1; }
+  100% {
+    transform: scale(1);
+    opacity: 0; } }
+
+.reveal {
+  position: relative;
+  transform: translateY(15rem);
+  opacity: 0;
+  transition: all 1.5s ease; }
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0); }
+
 *,
 *::after,
 *::before {
@@ -25,7 +45,8 @@ ORDER: Base + typography > general layout + grid > page layout > components
 
 html {
   font-size: 62.5%;
-  scroll-behavior: smooth; }
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory; }
   @media only screen and (min-width: 112.5em) {
     html {
       font-size: 75%; } }
@@ -45,9 +66,6 @@ body {
 ::selection {
   background-color: #5D5FEF;
   color: #fff; }
-
-.hidden {
-  display: none; }
 
 body {
   font-family: "Lato", sans-serif;
@@ -374,6 +392,40 @@ body {
   visibility: hidden;
   transform: translateY(-4rem); }
 
+/*CUSTOM PRELOADER*/
+.preload {
+  position: fixed;
+  z-index: 999999;
+  background: #f4f4f4;
+  width: 100%;
+  height: 100%;
+  transition: opacity 1s; }
+  .preload__finish {
+    opacity: 0;
+    pointer-events: none; }
+
+.loader {
+  border: 0 solid transparent;
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  top: calc(50vh - 75px);
+  left: calc(50vw - 75px); }
+  .loader::before, .loader::after {
+    content: '';
+    border: 1em solid #5D5FEF;
+    border-radius: 50%;
+    width: inherit;
+    height: inherit;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: loading 1s ease-out infinite;
+    opacity: 0; }
+  .loader::before {
+    animation-delay: 0.2s; }
+
 /* Works on Firefox */
 * {
   scrollbar-width: thin;
@@ -401,14 +453,11 @@ body {
   font-size: 2rem; }
   @media only screen and (max-width: 75em) {
     .mode-switch {
-      top: 7%;
+      top: 6%;
       right: 12rem; } }
-  @media only screen and (max-width: 56.25em) {
-    .mode-switch {
-      top: 6%; } }
   @media only screen and (max-width: 37.5em) {
     .mode-switch {
-      top: 4%; } }
+      top: 3%; } }
 
 .about-main {
   position: relative;
@@ -434,14 +483,10 @@ body {
     border-radius: 25% 75% 60% 40% / 30% 25% 75% 70%; }
     @media only screen and (max-width: 56.25em) {
       .about-main-img {
-        grid-row: 2 / 3;
-        grid-column: 2 / -2;
+        grid-row: 1 / 2;
+        grid-column: 1 / -1;
         width: 35rem;
         height: 35rem; } }
-    @media only screen and (max-width: 37.5em) {
-      .about-main-img {
-        grid-row: 1 / 2;
-        grid-column: 1 / -1; } }
   .about-main-textbox {
     grid-row: 1 / 2;
     grid-column: 2 / 3;
@@ -450,15 +495,13 @@ body {
     align-items: center; }
     @media only screen and (max-width: 56.25em) {
       .about-main-textbox {
-        grid-row: 1 / 2;
-        grid-column: 1 / -1;
-        width: 80%;
+        grid-row: 2 / 3;
+        grid-column: 2 / -2;
+        width: 90%;
         justify-self: center; } }
     @media only screen and (max-width: 37.5em) {
       .about-main-textbox {
-        width: 90%;
-        grid-row: 2 / 3;
-        grid-column: 2 / -2; } }
+        width: 90%; } }
     .about-main-textbox-card {
       padding: 2rem;
       background: var(--card);
@@ -485,11 +528,7 @@ body {
     color: var(--black);
     box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.2);
     border-bottom: 5px solid #5D5FEF; }
-    @media only screen and (max-width: 37.5em) {
-      .about-sub-card {
-        width: 90%;
-        justify-self: center; } }
-    @media only screen and (max-width: 37.5em) {
+    @media only screen and (max-width: 56.25em) {
       .about-sub-card {
         width: 80%;
         justify-self: center; } }
@@ -590,6 +629,7 @@ body {
       height: 75vh; } }
   @media only screen and (max-width: 37.5em) {
     .header {
+      height: 100vh;
       justify-content: center; } }
   .header__logo-box {
     display: none;
@@ -977,8 +1017,8 @@ body {
   padding: 5rem 10rem; }
   @media only screen and (max-width: 56.25em) {
     .section-projects {
-      padding: 5rem 15rem; } }
-  @media only screen and (max-width: 56.25em) {
+      padding: 5rem 20rem; } }
+  @media only screen and (max-width: 37.5em) {
     .section-projects {
       padding: 3rem 12rem; } }
 
