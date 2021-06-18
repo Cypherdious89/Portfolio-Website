@@ -46,6 +46,24 @@
         }
     }
 
+    &--submit {
+        background-color: $color-primary-main;
+        color: $color-white;
+        letter-spacing: 2px;
+        transition: all 0.3s;
+
+        &:hover {
+            background-color: $color-primary-light-1;
+            box-shadow: 0 2rem 4rem rgba($color-black, 0.2);
+        }
+
+        &:active,
+        &:focus {
+            transform: translateY(-0.2rem);
+            box-shadow: 0 1rem 2rem rgba($color-black, 0.2);
+        }
+    }
+
     &::after {
         content: "";
         display: inline-block;

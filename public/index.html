@@ -12,9 +12,9 @@
     <link rel="shortcut icon" type="image/png" href="img/favicon.png">
     <title>Priyansh: Portfolio</title>
     <!-- preloader -->
-    <div class="preload">
+    <!-- <div class="preload">
         <div class="loader"></div>
-    </div>
+    </div> -->
 </head>
 <body>
     <nav class="navigation-bar">
@@ -93,8 +93,8 @@
                     </div>
                 </div>
             </div>
-            <div class="about-sub reveal">
-                <div class="about-sub-card">
+            <div class="about-sub">
+                <div class="about-sub-card reveal">
                     <h3 class="heading-tertiary">Education</h3>
                     <p class="paragraph">
                         <span>
@@ -108,7 +108,7 @@
                         </span>
                     </p>
                 </div>
-                <div class="about-sub-card">
+                <div class="about-sub-card reveal">
                     <h3 class="heading-tertiary">Interests</h3>
                     <p class="paragraph">
                         <span>Web Development & Designing</span>
@@ -117,7 +117,7 @@
                         <span>Internet of Things</span>
                     </p>
                 </div>
-                <div class="about-sub-card">
+                <div class="about-sub-card reveal">
                     <h3 class="heading-tertiary">Hobbies</h3>
                     <p class="paragraph">
                         <span>Cricket</span>
@@ -226,7 +226,7 @@
             </div>
         </section>
         <section class="section-projects" id="section-projects">
-            <div class="u-center-text u-margin-bottom-small slide">
+            <div class="u-center-text u-margin-bottom-small">
                 <h1 class="heading-primary">Major Projects</h1>
             </div>
             <div class="project" id="projects">
@@ -306,7 +306,7 @@
                     </div>
                 </div>
             </div>
-            <div class="project-main-btn u-margin-top-medium reveal">
+            <div class="project-main-btn u-margin-top-medium">
                 <a href="https://github.com/Priyansh-09?tab=repositories" class="btn btn--main u-margin-top-small" target="blank">
                     See All Projects &rarr;
                 </a>
@@ -336,12 +336,13 @@
                                 <label for="subject" class="form__label">Subject</label>
                             </div>
                             <div class="form__group">
-                                <textarea name="Description" id="mail-content" class="form__input form__textarea"
+                                <textarea name="Description" id="message" class="form__input form__textarea"
                                     placeholder="Mail Description" rows="5" required></textarea>
-                                <label for="mail-content" class="form__label">Mail Description</label>
+                                <label for="message" class="form__label">Mail Description</label>
                             </div>
                             <div class="form__group">
-                                <button class="btn btn--main">Submit !</button>
+                                <input type="submit" value="Submit !" class="btn btn--submit submit">
+                                <!-- <button >Submit !</button> -->
                             </div>
                         </form>
                     </div>

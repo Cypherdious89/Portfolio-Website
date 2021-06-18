@@ -274,6 +274,18 @@ body {
   .btn--main::after {
     background-color: #636Cff; }
 
+.btn--submit {
+  background-color: #5D5FEF;
+  color: #fff;
+  letter-spacing: 2px;
+  transition: all 0.3s; }
+  .btn--submit:hover {
+    background-color: #636Cff;
+    box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.2); }
+  .btn--submit:active, .btn--submit:focus {
+    transform: translateY(-0.2rem);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); }
+
 .btn::after {
   content: "";
   display: inline-block;

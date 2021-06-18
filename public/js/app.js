@@ -12,7 +12,6 @@ themeSwitch.onclick = function(){
 let navlinks = document.getElementsByClassName('navigation__link');
 
 function check(){
-    console.log("link clicked");
     document.getElementById("nav-toggle").checked = false;
 }
 for (let i = 0 ; i < navlinks.length; i++) {
@@ -20,12 +19,12 @@ for (let i = 0 ; i < navlinks.length; i++) {
 }
 
 //PRE-LOADER
-window.addEventListener('load', ()=>{
-    const preload = document.querySelector('.preload');
-    setTimeout(() => {
-        preload.classList.add("preload__finish");
-    }, 1500);
-});
+// window.addEventListener('load', ()=>{
+//     const preload = document.querySelector('.preload');
+//     setTimeout(() => {
+//         preload.classList.add("preload__finish");
+//     }, 1500);
+// });
 
 //SCROLL REVEAL
 window.addEventListener('scroll', reveal);
@@ -44,6 +43,7 @@ function reveal() {
     }
 }
 
+//SCROLL SLIDE
 window.addEventListener('scroll', slide);
 
 function slide() {
@@ -59,3 +59,41 @@ function slide() {
             slide[i].classList.remove('active'); 
     }
 }
+
+//CONTACT FORM
+const contactForm = document.querySelector('.form');
+let username = document.getElementById('name');
+let email = document.getElementById('email');
+let subject = document.getElementById('subject');
+let message = document.getElementById('message');
+
+contactForm.addEventListener('submit', (e)=>{
+    e.preventDefault();
+
+    console.log('Submit clicked');
+    
+    let formData = {
+        name: username.value,
+        email: email.value,
+        subject: subject.value,
+        message: message.value
+    };
+
+    let xhr = new XMLHttpRequest();
+    xhr.open('POST', '/');
+    xhr.setRequestHeader('content-type', 'application/json');
+    xhr.onload = function(){
+        console.log(xhr.responseText);
+        if(xhr.responseText == 'success'){
+            alert('EMAIL SENT !');
+            username.value = '';
+            email.value = '';
+            subject.value = '';
+            message.value = '';
+        }
+        else{
+            alert('SOMETHING WENT WRONG !');
+        }
+    };
+    xhr.send(JSON.stringify(formData));
+});
