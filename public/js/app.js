@@ -18,13 +18,13 @@ for (let i = 0 ; i < navlinks.length; i++) {
     navlinks[i].addEventListener("click", check);
 }
 
-//PRE-LOADER
-// window.addEventListener('load', ()=>{
-//     const preload = document.querySelector('.preload');
-//     setTimeout(() => {
-//         preload.classList.add("preload__finish");
-//     }, 1500);
-// });
+// PRE-LOADER
+window.addEventListener('load', ()=>{
+    const preload = document.querySelector('.preload');
+    setTimeout(() => {
+        preload.classList.add("preload__finish");
+    }, 1500);
+});
 
 //SCROLL REVEAL
 window.addEventListener('scroll', reveal);
