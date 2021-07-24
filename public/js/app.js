@@ -60,6 +60,17 @@ function slide() {
     }
 }
 
+// SCROLL TO TOP BUTTON
+const scrollToTop = document.querySelector('.scroll_to_top');
+
+window.addEventListener('scroll', ()=>{
+    scrollToTop.classList.toggle('appear', window.scrollY > 200);
+});
+
+scrollToTop.addEventListener('click', ()=>{
+    window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
+});
+
 //CONTACT FORM
 const contactForm = document.querySelector('.form');
 let username = document.getElementById('name');
@@ -70,7 +81,7 @@ let message = document.getElementById('message');
 contactForm.addEventListener('submit', (e)=>{
     e.preventDefault();
 
-    console.log('Submit clicked');
+    console.log('Data Submitted');
     
     let formData = {
         name: username.value,

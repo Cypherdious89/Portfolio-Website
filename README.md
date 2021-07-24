@@ -2,7 +2,7 @@
 Hello everyone, This repository consists of my code for my Portfolio Website.  
 I have made this website using Advanced CSS SASS, JavaScript and Node JS .  
 
-The webpage is hosted on Netlify at:  
+The webpage is hosted on Heroku at:  
 https://ps09-portfolio-website.herokuapp.com/
 
 

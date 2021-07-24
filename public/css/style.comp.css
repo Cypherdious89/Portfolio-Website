@@ -466,6 +466,32 @@ body {
   *::-webkit-scrollbar-thumb:hover {
     background: linear-gradient(#5D5FEF, #535add); }
 
+.arrow-icon {
+  width: 3rem;
+  height: 3rem; }
+
+.scroll_to_top {
+  position: fixed;
+  background-color: #5D5FEF;
+  right: 2rem;
+  bottom: 2rem;
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  z-index: 99;
+  box-shadow: 0 2px 4px rgba(93, 95, 239, 0.4);
+  transition: all 0.3s;
+  visibility: hidden;
+  opacity: 0; }
+  .scroll_to_top:hover, .scroll_to_top:active {
+    background-color: #535add; }
+  .scroll_to_top.appear {
+    visibility: visible;
+    opacity: 1; }
+
 .mode-switch {
   position: absolute;
   top: 0%;

@@ -29,8 +29,8 @@ app.post("/", (req, res) =>{
     const mailOptions = {
         from: req.body.email,
         to: 'singhpriyansh3.14@gmail.com',
-        subject: `Message from ${req.body.name} : ${req.body.subject}`,
-        text: req.body.message
+        subject: `Mail from ${req.body.email} : ${req.body.subject}`,
+        text: `Message from ${req.body.name} \n ${req.body.message}`
     };
 
     transporter.sendMail(mailOptions, (error, info)=>{

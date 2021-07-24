@@ -1,0 +1,32 @@
+.arrow-icon {
+    width: 3rem;
+    height: 3rem;
+}
+
+.scroll_to_top {
+    position: fixed;
+    background-color: $color-primary-main;
+    right: 2rem;
+    bottom: 2rem;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    z-index: 99;
+    box-shadow: 0 2px 4px rgba($color-primary-main, 0.4);
+    transition: all 0.3s;
+    visibility: hidden;
+    opacity: 0;
+
+    &:hover, &:active {
+        background-color: $color-primary-light-2;
+    }
+
+    &.appear {
+        visibility: visible;
+        opacity: 1;
+    }
+}
+
